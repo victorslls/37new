@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    
+}
+
+
+.header {
+    position: absolute; /* Correção do valor para position */
+    display: flex;
+    background-color: rgba(243, 243, 243, 0.2); /* Fundo preto com 90% de opacidade */
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-around;
+    top: 0; /* Garante que o cabeçalho fique no topo */
+    left: 0; /* Garante que o cabeçalho ocupe toda a largura */
+}
+
+
+
+
+
+.header .header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 10px;
+    color: #fff;   
+}
+
+
+
+.header .header-logo .logo{
+    width: 3rem;
+    height: 3rem;  
+}
+
+
+.header .nav .lista-menu {
+    display: flex; 
+    gap: 2rem;
+    
+}
+.header .nav .lista-menu .lista {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.082);
+    padding: 1.5rem;
+    gap: 2rem;
+    border-radius: 10%;
+    transition: all 1s;
+}
+
+.header .nav .lista-menu .lista:hover {
+    background-color: rgba(30, 72, 187, 0.466);
+}
+
+.header .nav .lista-menu .menu{
+    display: inline;
+    color: #fff;
+
+}
+
+
+.header .social-icons{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+
+.main #home {
+    width: 100%;
+    height: 80vh;
+    background-color:rgb(96, 43, 139);     
+}
+
+.main #home .container {
+    background-image: url(assents/imagebanner.jpg);
+    width: 100%; /* ou um valor fixo, como 600px */
+    height: 80vh; /* ajuste a altura conforme necessário */
+    
+    background-size: cover; /* ajusta a imagem para cobrir o contêiner */
+    background-position: center; /* centraliza a imagem no contêiner */
+    background-repeat: no-repeat; /* evita a repetição da imagem */
+    border: 1px solid #ccc; /* apenas para visualização */
+    object-fit: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5vw;
+    gap: 2rem;
+
+}
+
+.main #home .container .box-1{
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(14, 25, 87, 0.5); /* Fundo vermelho com 50% de opacidade */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+    border-radius: 0% 50% 0% 50%;
+    padding: 2rem 3rem;
+    
+}
+.main #home .container .box-1 h2{
+    font-size: 44px;
+    color:    rgb(43, 112, 139);
+    
+}
+
+.main #home .container .box-1 p{
+    font-size: 22px;
+    color:    rgb(255, 255, 255);
+    
+}
+
+.main #home .container .box-1 .btn{
+    width: 40%;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.082);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    transition: all 1s ease-out;
+    font-size: 20px;
+    border:  1px solid rgba(45, 156, 151, 0.5);;
+    
+
+}
+.main #home .container .box-1 .btn:hover{
+    cursor: pointer;
+    background-color: rgba(30, 72, 187, 0.466);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #c78227;
+  
+
+}
+
+
+
+.main #home .container .box-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(to right, rgba(255, 36, 7, 0.082), rgba(238, 255, 5, 0.678));
+    align-items: center;
+    gap: 2rem;
+    border-radius: 10px;
+    
+}
+
+
+.main #home .container .box-2 h2{
+     font-size: 3rem; /* Tamanho da fonte ajustável */
+    font-weight: bold; /* Tamanho da fonte ajustável */
+    background: linear-gradient(to right, rgba(255, 36, 7, 0.774), rgb(5, 105, 255));
+    -webkit-background-clip: text; /* Faz o gradiente aplicar-se ao texto */
+    -webkit-text-fill-color: transparent; /* Torna o texto transparente para mostrar o gradiente */
+    background-clip: text; /* Adicional para suportar outros navegadores */
+    color: transparent;
+    
+}
+
+.main #home .container .box-2 p{
+    color:   rgb(42, 182, 218);
+}
+
+
+.main .sobre{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, rgba(15, 53, 4, 0.37), rgba(10, 10, 238, 0.486)); /* Gradiente de Aqua para Azul Escuro */
+    display: flex;
+    padding-top: 100px;
+    align-items: start;
+    justify-content: space-around;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+.main .sobre .title {
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.082);
+    
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    
+
+   
+    
+}
+
+.main .sobre .title .btn{
+    width: 100%;
+    border-radius: 25px;
+    padding-bottom: 80px;
+    background-color: rgba(0, 0, 0, 0.082);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    transition: all 1s ease-out;
+    font-size: 20px;
+    border:  1px solid rgba(45, 156, 151, 0.5);;
+    
+}
+.main .sobre .title .btn:hover{
+    cursor: pointer;
+    background-color: rgba(30, 72, 187, 0.466);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #c78227;
+  
+    
+}
+
+.main .experiência {
+    
+    font-size: 22px;
+    padding-top: 100px;;
+    align-items: center;
+    height: 70vh;
+    background-color: rgba(30, 72, 187, 0.466);
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.main .experiência p {
+    width: 60%;
+    padding-top: 2rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+   
+}
+
+.main .experiência .jobs {
+    
+   width: 100%;
+ 
+    display: flex;
+   align-items: center;
+   justify-content: space-around;
+   display: flex ;
+   gap: 5rem;
+   height: 50%;
+   
+   
+}
+.main .experiência .jobs a{
+    overflow-x: hidden;
+    overflow: hidden;
+    background-color: aqua;
+    width: 250px;    
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 20px ;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: auto;
+}
+
+.main #contato  {
+    padding-top: 20px;
+    align-items: center;
+   
+    background-color: rgba(42, 66, 133, 0.466);
+    display: flex;
+    flex-direction: column;
+}
+
+.main #contato h2 {
+    overflow-x: hidden;
+    padding-top: 20px;
+    align-items: center;
+    
+
+    display: flex;
+    flex-direction: column;
+}
+
+.main #contato ul {
+   
+    width: 100%;    
+    gap: 3rem;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 20px ;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.main #contato ul li {
+    background-color: aqua;
+    width: 230px;    
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 20px ;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+input{
+    height: 2rem;
+}
+
+/*forms*/
+.section-forms{
+    background: linear-gradient(to right, rgba(15, 53, 4, 0.37), rgba(10, 10, 238, 0.486)); 
+    
+    display: flex;
+    align-items: center;
+   justify-content: center;
+}
+
+.section-forms .container h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.section-forms .container #contactForm {
+    display: flex;
+    padding: 1rem;
+    border-radius: 50px;
+    flex-direction: column;
+    background-color: rgba(30, 72, 187, 0.466);
+    gap: 1rem;
+   
+    width: 100%;
+}
+
+.section-forms .container #contactForm .form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.btn-container{
+    display: flex;
+}
+
+.btn {
+    
+
+            width: 20%;
+            padding: 10px 0;
+            margin: 10px auto;
+            display: block;
+            background-color: #6a11cb;
+            border: none;
+            color: #fff;
+            border-radius: 5px;
+            text-align: center;
+}
+
+
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #2575fc;
+}
+
+

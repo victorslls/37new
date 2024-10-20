@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <a href="http://127.0.0.1:5500/index.html"><img class="logo" src="assents/logo.png" alt="Logo"></a>
+
+            <h1 class="title">Desenvolvedor de SITE</h1>
+            <hr>
+        </div>
+        <nav class="nav">
+            <ul class="lista-menu">
+                <li class="lista-menu lista"><a class="menu" href="#home">Identificação</a></li>
+                <li class="lista-menu lista"><a class="menu" href="#sobre">Formação</a></li>
+                <li class="lista-menu lista"><a class="menu" href="#projetos">experiência profissional</a></li>
+                <li class="lista-menu lista"><a class="menu" href="#contato">hobbis</a></li>
+
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="https://instagram.com"><img src="assents/insta.png" alt="Instagram"></a>
+            <a href="https://github.com"><img src="assents/facebook.png" alt="GitHub"></a>
+            <a href="https://linkedin.com"><img src="assents/linkedin.png" alt="LinkedIn"></a>
+            
+        </div>
+    </header>
+    <main class="main">
+        <section id="home">
+            <div class="container">
+                <div class="box-1">
+                    <h2>Bem-vindo ao melhor criador de site do Nordeste</h2>
+                    <p>Sites e LP ao seu alcance, tenha os sites mais atualizados do Brasil.</p>
+                    <button class="btn">enviar</button>
+
+                </div>
+                <div class="box-2">
+                    
+                    <h2>"Designer e Desenvolvedor Front-End <br>| Soluções Web Modernas e Responsivas" </h2>
+
+
+                </div>
+
+            </div>
+        </section>
+        <section id="sobre" class="sobre">
+            <div class="title">
+                <h2>Sobre</h2>
+                <p>Olá! Sou Marcos, um apaixonado por tecnologia e programador front-end. Com um forte compromisso com a responsabilidade e a comunicação eficaz, me dedico a criar soluções digitais inovadoras e de alta qualidade.
+
+                    Fora do trabalho, gosto de praticar esportes como surf e futebol, que me proporcionam grande prazer e realização. Também encontro inspiração e clareza durante minhas corridas. Acredito que um equilíbrio saudável entre trabalho e atividades físicas é essencial para o sucesso e bem-estar..</p>
+            </div>
+            <div class="title">
+                <img src="assents/show.jpg" alt="">
+                <button class="btn">Ver mais</button>
+            </div>
+
+
+        </section>
+        <section class="experiência" id="projetos">
+            <h2>experiência profissional</h2>
+            <p>aqui estão todos os projetos onde fiz participação ou bootcamp, dado isso a maioria desses projetos foram utilizando ReactJS e NextJS, tailwind e shadcnUI</p>
+            <div class="jobs">
+                <a class="card" href="https://project-portifolio-steel.vercel.app/">Portifolio em react</a>
+                <a href="https://project-hotel-theta.vercel.app/">Hotel</a>
+                <a href="https://engenharia-lyart.vercel.app/">Engenharia</a>
+            </div>
+
+
+        </section>
+        
+        <section class="section-forms">
+            <div class="container mt-5">
+                <h2>Formulário de Contato</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" class="form-control" id="sobrenome" name="sobrenome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" class="form-control" id="telefone" name="telefone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea class="form-control" id="mensagem" name="mensagem" rows="3" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="lingua">Língua</label>
+                        <select class="form-control" id="lingua" name="lingua" required>
+                            <option value="Inglês">Inglês</option>
+                            <option value="Espanhol">Espanhol</option>
+                            <option value="Frances">Frances</option>
+                            <option value="Português (pt-br)">Português (pt-br)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="arquivo">Upload de Arquivo</label>
+                        <input type="file" class="form-control-file" id="arquivo" name="arquivo" accept=".pdf, .doc, .docx, .jpeg, .png" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="linguagens">Linguagens Preferidas</label>
+                        <select multiple class="form-control" id="linguagens" name="linguagens[]" required>
+                            <option value="HTML">HTML</option>
+                            <option value="CSS">CSS</option>
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="Python">Python</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="banco_dados">Tipo de Banco de Dados</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="banco_dados" id="mysql" value="MySQL" required>
+                            <label class="form-check-label" for="mysql">
+                                MySQL
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="banco_dados" id="postgresql" value="PostgreSQL" required>
+                            <label class="form-check-label" for="postgresql">
+                                PostgreSQL
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="turno">Turno de Preferência para Reuniões</label>
+                        <select class="form-control" id="turno" name="turno" required>
+                            <option value="Manhã">Manhã</option>
+                            <option value="Tarde">Tarde</option>
+                            <option value="Noite">Noite</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="horario">Horário Sugerido para Reuniões</label>
+                        <input type="time" class="form-control" id="horario" name="horario" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="data">Previsão de Entrega</label>
+                        <input type="date" class="form-control" id="data" name="data" required>
+                    </div>
+                    <div class="btn-container">
+                        <button type="reset" class="btn btn-secondary">Limpar</button>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+
+                    </div>
+                </form>
+            </div>
+        
+           
+        
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Seu Nome. Todos os direitos reservados.</p>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $('#contactForm').on('submit', function(event) {
+        event.preventDefault();
+        // Lógica de validação e envio aqui
+        alert('Formulário enviado com sucesso!');
+    });
+</script>
+<script src="app.js"></script>
+
+</html>
